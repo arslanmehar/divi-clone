@@ -97,7 +97,7 @@ body{
     border-radius: 5px;
     margin: 8px 0;
     color: #A5AEBA;
-    background-color: gray;
+    background-color: #F0F2F4;
     border: 0;
 }
 .form1:hover{
@@ -193,12 +193,14 @@ body{
     margin-top: 0;
     justify-content: center;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .backgroundimage h1{
     margin-top: 0;
     font-size: 80px;
     font-weight: 900;
-    font-family: sans-serif;
+    font-family: none;
     color: #3c43eb;
     text-align: center;
 }
@@ -210,7 +212,8 @@ body{
 }
 .backgroundimage p{
     width: 677px;
-    font-size: medium;
+    font-size: 18px;
+    color: white;
     /* display: flex; */
 }
 #submit{
@@ -223,16 +226,15 @@ body{
     border-radius: 100px;
     color: white;
     font-weight: bold;
+    margin-top: 23px;
     border: 0;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
 }
-
-
 .backgroundimage{
-    background-image: url('home-office-336378_1280.jpg');
+    background-image: url('workstation-336369_1280.jpg');
     height: 700px;
     width: 100%;
     background-repeat: no-repeat;
@@ -240,10 +242,49 @@ body{
 }
 .bg-overlay{
     display: flex;
-    height: 100%;
-    
-    background-color: rgba(255, 255, 2555, 0.7);
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.3);
     text-align: center;
     align-items: center;
     flex-direction: column;
+}
+.img-behind-video{
+    background-image: url('gettyimages-500177214-612x612.jpg');
+     height: 500px;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+.video-overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .9);
+    box-shadow: 0 2px 9px -5px grey;
+    height: 100%;
+}
+.video-overlay video{
+    display: flex;
+    height: 360px;
+    width: 639px;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border: 1px solid;
+    box-shadow: 0px 1px 13px 1px;
+}
+.row img{
+    height: 300px;
+    width: 300px;
+    margin: 5px;
+    box-shadow: 0px 1px 13px 1px gray;
 }
