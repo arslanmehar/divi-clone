@@ -294,7 +294,7 @@ a:hover{
     background-image: url('back-to-school-2707089_1280.jpg');
     height: 350px;
     width: 100%;
-    background-repeat: no-repeat;
+    background-repeat: round;
     /* box-shadow: 0px 0px 8px 0px grey; */
 }
 .col-h3-1{
@@ -335,11 +335,7 @@ a:hover{
     font-weight: 900;
     color: white;
     padding: 11px 15px;
-    margin: 50px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    margin: 30px;
 }
 .build{
     display: flex;
@@ -545,7 +541,7 @@ a:hover{
 }
 .customize-build p{
     /* width: 818px; */
-    font-size: 19px;
+    font-size: 18px;
     color: #837C90;
 }
 .customize-build input{
@@ -567,7 +563,7 @@ a:hover{
 .customize-image{
 
     /* width: 35%; */
-    height: 500px;
+    height: 400px;
 }
 .background-img{
     display: flex;
@@ -577,7 +573,7 @@ a:hover{
     height: 600px;
     width: 100%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 .divi-on-background{
     background-color: #4B3BDB;
@@ -883,7 +879,7 @@ a:hover{
     justify-content: center;
     height: 120px;
     box-shadow: 2px 0px 24px lightgrey;
-    
+    width: 105px;
 }
 /* .grid-social{
     box-shadow: 2px -5px 33px lightgrey;
@@ -891,8 +887,8 @@ a:hover{
 .footer-list{
     display: flex;
     list-style: none;
-    justify-content: center;
-    /* padding: 30px 184px; */
+    /* justify-content: center; */
+    padding: 30px 125px;
 
 }
 .footer-parent-list-item{
@@ -973,22 +969,23 @@ a:hover{
     .promote-image > img{
         width: 100%;
         flex-wrap: wrap;
+
     }
-    .promote{
+    /* .promote{
         flex-wrap: wrap;
     }
     .customize{
         flex-wrap: wrap;
-    }
-    .customize-image{
+    } */
+    /* .customize-image{
         width: 100%;
-    }
-    .design{
+    } */
+    /* .design{
         flex-wrap: wrap;
-    }
-    .design-image{
-        width: 100%;
-    }
+    } */
+    /* .design-image{
+        display: none;
+    } */
     .promote-build{
         margin: 0;
     }
@@ -1009,6 +1006,9 @@ a:hover{
         display: flex;
         flex-wrap: wrap;
     }
+    .footer-list{
+        padding: 0;
+    }
     
 }
 @media screen and (max-width:425px){
@@ -1017,12 +1017,102 @@ a:hover{
         flex-wrap: wrap;
         height: unset;
     }
-    
+    .final_grid{
+     display: flex;
+     flex-wrap: wrap;
+    }
+    .unlimited_container h1{
+        font-size: 65px;
+    }
+    .backgroundimage p{
+        font-size: 15px;
+        width: auto;
+    }
+    .backgroundimage h2{
+        width: auto;
+    }
+    .background-image{
+        height: 255px;
+    }
+    .promote-image > img{
+        margin-top: 30px;
+    }
+    .grid-social{
+        margin-top: 10%;
+    }
+    .heading h3{
+        font-size: 25px;
+    }
+    .row_container h3{
+        font-size: 22px;
+    }
+    .unlimited_container h3{
+        font-size: 22px;
+    }
+    .unlimited_container h1{
+        font-size: 60px;
+    }
+    .power_container h3{
+        font-size: 26px;
+    }
+    .power_container h1{
+        font-size: 66px;
+    }
+    .promote-build h3{
+        font-size: 27px;
+    }
+    .promote-build p{
+        font-size: 18px;
+    }
+    .promote-build h1{
+        font-size: 67px;
+    }
+    .paragraphs p{
+        font-size: 100%;
+    }
+    .customize-build h2{
+        font-size: 25px;
+    }
+    .customize-build h1{
+        font-size: 62px;
+    }
+    .customize-build p{
+        font-size: 16px;
+    }
+    .design-build h2{
+        font-size: 25px;
+    }
+    .design-build h1{
+        font-size: 62px;
+    }
+    .design-build p{
+        font-size: 16px;
+    }
+    .build h2{
+        font-size: 25px;
+    }
+    .build h1{
+        font-size: 65px;
     }
 }
 @media screen and (max-width:768px){
     .footer-list{
         display: flex;
+        flex-wrap: wrap;
+    }
+    .row_container h3{
+        height: auto;
+    }
+    .col{
+        margin-top: 2%;
+    }
+    .design{
+        flex-wrap: wrap;
+    }
+    .promote{
+        flex-wrap: wrap;
+    }
+    .customize{
         flex-wrap: wrap;
     }
 }    
@@ -1031,4 +1121,31 @@ a:hover{
         display: flex;
         flex-wrap: wrap;
         max-width: unset;
+    }
+    .unlimited_container h1{
+        font-size: 58px;
+    }
+    .promote-image > img{
+        margin-top: 63px;
+    }
+    .paragraphs p{
+        font-size: 100%;
+    }
+    .grid-social{
+        margin-top: 15%;
+    }
+}
+@media screen and (max-width:320px){
+    .unlimited_container h1{
+        font-size: 45px;
+    }
+    .customize-build h1{
+        font-size: 60px;
+    }
+    .promote-image > img{
+        margin-top: 130px;
+    }
+    .paragraphs p{
+        font-size: 98%;
+    }
 }
